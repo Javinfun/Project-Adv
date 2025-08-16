@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build black_hole",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "black_hole.cpp",
+        "-std=c++17",
+        "-o", "black_hole.exe",
+        "-I", "C:/Users/Javy/Documents/PersonalProjects/VisualStudio/Project-Adv/vcpkg/installed/x64-mingw-dynamic/include",
+        "-L", "C:/Users/Javy/Documents/PersonalProjects/VisualStudio/Project-Adv/vcpkg/installed/x64-mingw-dynamic/lib",
+        "-lglew32",
+        "-lglfw3",
+        "-lopengl32"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
+
